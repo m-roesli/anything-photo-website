@@ -1,0 +1,299 @@
+@import url("reset.css");
+@import url("global.css");
+@import url("structure.css");
+@import url("images.css");
+/* TODO: Check if the files here are needed */
+/*@import url("flash.css");
+@import url("normalize.css");*/
+
+/*================================ ATTRIBUTES ================================*/
+
+.right {
+  float: right;/* TODO: make this more structured*/
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: auto;
+  text-align: center;
+  width: 250px;
+  /*position: absolute;*/
+  display: inline-block;
+  margin: 10px;
+}
+
+.card img { /* TODO: fix overflow problem */
+  width: 100%;
+  /*margin: 5px;*/
+  /*border-spacing: 20px;*/
+  float: left
+  /*overflow: auto;*/
+  /*display: block;*/
+}
+
+.card-container {
+  padding: 15px;
+  /*text-align:center;*/
+}
+
+.button {
+  border: none;
+  display: inline-block;
+  outline: 0;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.3
+}
+
+.button:hover {
+  color: #000!important;
+  background-color: #ccc!important
+}
+
+.light-grey {
+  color: #000!important;
+  background-color: #f1f1f1!important
+}
+
+.section{
+  margin-top: 16px!important;
+  margin-bottom: 16px!important
+}
+
+.opacity, .hover-opacity:hover {
+  opacity: 0.60
+}
+
+.opacity-off, .hover-opacity-off:hover {
+  opacity: 1
+}
+
+.margin-right {
+  margin-right: 16px!important
+}
+
+.hover-text-green:hover {
+  color: #4CAF50!important
+}
+
+.col {
+  float: left;
+  width: 100%
+}
+
+.col.s2 {
+  width: 30%
+}
+
+.col.s3 {
+  width: 30%
+}
+
+.row-padding, .row-padding>.col {
+  padding: 8px 8px
+}
+
+.display-middle {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  -ms-transform: translate(-50%, -50%);
+}
+
+.text-white {
+  color: #fff!important
+}
+
+.wide {
+  letter-spacing: 4px;
+}
+/*----------*/
+.w3-bar {
+  width: 100%;
+  overflow: hidden
+}
+
+.w3-card, .w3-card-2 {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+}
+
+.w3-animate-top {
+  position: relative;
+  animation: animatetop 0.4s
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0
+  }
+  to {
+    top: 0;
+    opacity: 1
+  }
+}
+
+.w3-white, .w3-hover-white:hover {
+  color: #000!important;
+  background-color: #fff!important
+}
+
+.w3-card, .w3-card-2 {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+}
+
+.w3-card-4, .w3-hover-shadow:hover {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.w3-top, .w3-bottom {
+  position: fixed;
+  width: 100%;
+  z-index: 1
+}
+
+.w3-bar .w3-bar-item {
+  padding: 8px 16px;
+  float: left;
+  width: auto;
+  border: none;
+  outline: none;
+  display: block
+}
+
+.w3-bar .w3-button {
+  white-space: normal
+}
+
+.w3-bar:before, .w3-bar:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.w3-bar .w3-button {
+  white-space: normal
+}
+
+.w3-button:hover {
+  color: #000!important;
+  background-color: #ccc!important
+}
+
+.w3-btn, .w3-button {
+  border: none;
+  display: inline-block;
+  outline: 0;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: black;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap
+}
+
+.w3-btn, .w3-button {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none
+}
+
+.w3-disabled, .w3-btn:disabled, .w3-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.3
+}
+
+.w3-right {
+  float: right!important
+}
+
+.w3-red, .w3-hover-red:hover {
+  color: #fff!important;
+  background-color: #f44336!important
+}
+
+/*---------*/
+.center {
+  margin:auto!important;
+  text-align: center!important
+}
+
+.padding-large {
+  padding: 12px 24px!important
+}
+
+.black {
+  color: #fff!important;
+  background-color: #000!important
+}
+
+.title {
+  font-size: 40px;
+}
+
+.xxlarge {
+  font-size: 36px!important
+}
+
+.xlarge {
+  font-size: 24px!important
+}
+
+.wide{
+  letter-spacing: 4px
+}
+
+.animate-opacity {
+  animation: opac 0.8s
+}
+
+.hide-small {
+  display: none!important
+}
+
+.opacity-min {
+  opacity: 0.75
+}
+
+.display-container {
+  position: relative;
+  /*display: inline-block;*/
+}
+
+.display-container:hover {
+  /*display: block;*/
+}
+
+.container {
+  padding: 0.01em 16px;
+}
+
+.content {
+  max-width: 980px;
+  margin: auto;
+}
+
+.padding-64 {
+  padding-bottom: 64px!important;
+  padding-top: 64px!important;
+  overflow: auto;
+}
